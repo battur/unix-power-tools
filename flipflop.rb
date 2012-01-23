@@ -28,19 +28,19 @@ Comment:
       Example:
 
       query.txt:
-      insert into some_table(col1, col2, col3, col4, col5, col6, col7, col8, col9)
-      values(val1, val2, val3, val4, val5, val6, val7, val8, val9);
+      insert into some_table (col1,col2,col3,col4,col5,col6,col7,col8,col9)
+      values (12354,65454,13546,0,NULL,1,4657641,1500,321351);
 
       flipflop -o ", " -f query.txt # would bring:
-      insert into some_table(col1, values(val1
-      col2, val2
-      col3, val3
-      col4, val4
-      col5, val5
-      col6, val6
-      col7, val7
-      col8, val8
-      col9), val9);
+      insert into some_table(col1, values(12354
+      col2, 65454
+      col3, 13546
+      col4, 0
+      col5, NULL
+      col6, 1
+      col7, 4657641
+      col8, 1500
+      col9), 321351);
 
       Once, you've finished editing, flipflop it again. It will transform
       into the insert SQL statement again :)
